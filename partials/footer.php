@@ -1,72 +1,6 @@
-<!doctype html>
-<html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-2kOE+STGAkgemIkUbGtoZ8dJLqfvJ/xzRnimSkQN7viOfwRvWseF7lqcuNXmjwrL" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
-  <title>Basic Blog</title>
-</head>
 
-<body>
-  <header class="header">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-md-center" id="navbars">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <h4 class="text-uppercase">Login</h4>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <h4 class="text-uppercase">Register</h4>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <h4 class="text-uppercase">Posts</h4>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <h4 class="text-uppercase">Profile</h4>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <section class="main_content">
-    <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col-md-7">
-            <div class="login_form">
-              <h3  class="p-3">Login Form</h3>
-              <form class="p-3 pt-5 w-50">
-                <div class="form-group">
-                  <label for="inputEmail">Email address</label>
-                  <input type="email" class="form-control" id="inputEmail">
-                </div>
-                <div class="form-group">
-                  <label for="inputPassword">Enter password</label>
-                  <input type="password" class="form-control" id="inputPassword">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer bg-dark">
+<footer class="footer bg-dark">
     <section class="top_footer danger">
       <div class="container">
         <div class="row no-gutters">
@@ -83,10 +17,7 @@
         <div class="row no-gutters">
           <div class="col-sm-12 col-md-4">
             <h4 class="text-uppercase text-white font-weight-bold pt-2 pb-2">TWITTER FEED</h4>
-            <ul class="nav flex-column p-3">
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-twitter fa-2x text-white pr-2"></i>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+            <ul class="nav%20tasks/register.phptur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fab fa-twitter fa-2x text-white pr-2"></i>Lorem ipsum dolor sit amet,
@@ -148,8 +79,8 @@
     </section>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
