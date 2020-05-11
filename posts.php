@@ -1,42 +1,18 @@
 <?php
-    require("partials/header.php");
-    ?>
+require("partials/header.php");
+require("data/posts_data.php");
+?>
 <section class="main_content">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="posts pt-5 pb-5">
-          <div class="post-info">
-            <h4>Post name: Lorem Ipsum oftware like Aldus</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st <br>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st.</p>
-          </div>
-          <div class="post-info">
-            <h4>Post name: Lorem Ipsum oftware like Aldus</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st <br>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st.</p>
-          </div>
-          <div class="post-info">
-            <h4>Post name: Lorem Ipsum oftware like Aldus</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st <br>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st.</p>
-          </div>
-          <div class="post-info">
-            <h4>Post name: Lorem Ipsum oftware like Aldus</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st <br>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st.</p>
-          </div>
-          <div class="post-info">
-            <h4>Post name: Lorem Ipsum oftware like Aldus</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st <br>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st.</p>
-          </div>
-        </div>
+        <?php
+        for ($row = 0; $row < 3; $row++) {
+          echo '<div class="post-info">';
+          echo " <h4>Post name:" . $posts[$row][0] . "</h4>" . "<p>" . $posts[$row][1] . "</p>";
+          echo ' </div>';
+        }
+        ?>
         <nav aria-label="Page navigation ">
           <ul class="pagination">
             <li class="page-item">
@@ -59,5 +35,5 @@
   </div>
 </section>
 <?php
-    require("partials/footer.php");
-    ?>
+require("partials/footer.php");
+?>
