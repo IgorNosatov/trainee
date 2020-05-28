@@ -1,9 +1,4 @@
-<?php
-    require("partials/header.php");
-    require("data/posts_data.php");
-    ?>
-<section class="main_content">
-  <div class="container">
+<div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <h3 class="pt-5">Full Name: Igor Nosatov</h3>
@@ -32,15 +27,10 @@
         <?php
         for ($row = 0; $row < 3; $row++) {
           echo '<div class="post-info">';
-          echo " <h4>Post name:" . $posts[$row][0] . "</h4>" . "<p>" . $posts[$row][1] . "</p>";
+          echo " <h4 class='pt-2'>Post name:" . $news[$row][0] . "</h4>" . "<p>" . $news[$row][1] . "</p>";
           echo ' </div>';
         }
         ?>
       </div>
     </div>
   </div>
-</section>
-
-<?php 
-require("partials/footer.php");
-?>
