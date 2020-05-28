@@ -9,12 +9,9 @@ use application\interfaces\controllers\MainInterface;
 class MainController extends Controller implements MainInterface{
 
 	public function indexAction() {
-		$posts1 = new Post;
-		$array = $posts1->showPost();
-		$vars = [
-			'news' => $array,
-		];
-		$this->view->render('Главная страница', $vars);
+		
+		$posts = Post::findAll();
+		$this->view->render('Главная страница',  ['posts' => $posts]);
 	}
 
 }

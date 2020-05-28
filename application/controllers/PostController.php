@@ -4,14 +4,13 @@ namespace application\controllers;
 
 use application\core\Controller;
 use application\interfaces\controllers\PostInterface;
+use application\models\Post;
 
 class PostController extends Controller implements PostInterface{
 
 	public function indexAction() {
-		$vars = [
-			'news' => $this->model->showPost(),
-		];
-		$this->view->render('Посты', $vars);
+		$posts = Post::findAll();
+		$this->view->render('Посты',['posts' => $posts]);
 	}
 
 }

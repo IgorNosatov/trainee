@@ -9,12 +9,8 @@ use application\interfaces\controllers\ProfileInterface;
 class ProfileController extends Controller implements ProfileInterface{
 
 	public function indexAction() {
-		$posts1 = new Post;
-		$array = $posts1->showPost();
-		$vars = [
-			'news' => $array,
-		];
-		$this->view->render('Профиль', $vars);
+		$posts = Post::findAll();
+		$this->view->render('Профиль', ['posts' => $posts]);
 	}
 
 }

@@ -3,9 +3,8 @@
 namespace application\core;
 
 use PDO;
-use application\interfaces\core\DbInterface;
 
-class Db implements DbInterface{
+class Db{
 
 	protected $db;
 	

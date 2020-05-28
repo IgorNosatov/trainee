@@ -2,14 +2,13 @@
 
 namespace application\models;
 
-use application\core\Model;
+use application\models\ActiveRecord;
 
-class Post extends Model {
+class Post extends ActiveRecord
+{
 
-	public function showPost() {
-		$result = $this->db->row('SELECT name, description FROM posts');
-		return $result;
-    }
-    
-
+	protected static function getTableName(): string
+	{
+		return 'posts';
+	}
 }

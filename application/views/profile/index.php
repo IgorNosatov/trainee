@@ -24,7 +24,7 @@
       </div>
       <div class="col-sm-12 col-md-6">
         <h3 class="pt-5 pb-4">Post made by Igor Nosatov</h3>
-        <?php foreach ($news as $val) : ?>
+        <?php foreach ($posts as $val) : ?>
         <h3><?php echo $val['name']; ?></h3>
         <p><?php echo $val['description']; ?></p>
         <hr>
