@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 use application\core\Router;
 
 spl_autoload_register(function($class) {
