@@ -14,7 +14,7 @@ class ProfileController extends Controller implements ProfileInterface{
 		$vars = [
 			'news' => $array,
 		];
-		$this->view->render('Главная страница', $vars);
+		$this->view->render('Профиль', $vars);
 	}
 
 }
