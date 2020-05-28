@@ -1,7 +1,4 @@
-<?php
-    require("partials/header.php");
-    ?>
-<section class="main_content">
+
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-md-7">
@@ -22,7 +19,3 @@
       </div>
     </div>
   </div>
-</section>
-<?php
-    require("partials/footer.php");
-    ?>
