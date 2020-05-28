@@ -24,13 +24,11 @@
       </div>
       <div class="col-sm-12 col-md-6">
         <h3 class="pt-5 pb-4">Post made by Igor Nosatov</h3>
-        <?php
-        for ($row = 0; $row < 3; $row++) {
-          echo '<div class="post-info">';
-          echo " <h4 class='pt-2'>Post name:" . $news[$row][0] . "</h4>" . "<p>" . $news[$row][1] . "</p>";
-          echo ' </div>';
-        }
-        ?>
+        <?php foreach ($news as $val) : ?>
+        <h3><?php echo $val['name']; ?></h3>
+        <p><?php echo $val['description']; ?></p>
+        <hr>
+      <?php endforeach; ?>
       </div>
     </div>
   </div>

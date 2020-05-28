@@ -11,7 +11,7 @@ class PostController extends Controller implements PostInterface{
 		$vars = [
 			'news' => $this->model->showPost(),
 		];
-		$this->view->render('Главная страница', $vars);
+		$this->view->render('Посты', $vars);
 	}
 
 }
