@@ -40,8 +40,5 @@ class Db implements DbInterface{
 		return $result->fetchColumn();
 	}
 
-	public function lastInsertId() {
-		return $this->db->lastInsertId();
-	}
 
 }
