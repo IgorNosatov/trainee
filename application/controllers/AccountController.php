@@ -10,12 +10,12 @@ class AccountController extends Controller implements AccountInterface{
 
 	public function registerAction() {
 
-		$this->view->render('Главная страница');
+		$this->view->render('Аккаунт регистрация');
 	}
 
 	public function loginAction() {
 
-		$this->view->render('Главная страница');
+		$this->view->render('Аккаунт логин');
 	}
 
 }
