@@ -15,14 +15,4 @@ abstract class ActiveRecord
 
     abstract protected static function getTableName();
 
-    public static function getById(int $id): ?self
-    {
-        $db = new Db();
-        $entities = $db->query(
-            'SELECT * FROM `' . static::getTableName() . '` WHERE id=:id;',
-            [':id' => $id],
-            static::class
-        );
-        return $entities ? $entities[0] : null;
-    }
 }
